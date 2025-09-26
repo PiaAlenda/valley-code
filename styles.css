@@ -1565,7 +1565,6 @@ a {
 }
 
 /* Tablets y móviles */
-
 @media (max-width: 768px) {
 
   .nav-links {
@@ -1691,7 +1690,6 @@ a {
    .testimonial-card {
     flex: 0 0 90%; 
   }
-  
 }
 
 
