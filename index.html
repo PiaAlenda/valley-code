@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valley Code </title>
+  <meta name="description" content="Creamos páginas web profesionales que generan resultados reales. Diseño moderno, funcionalidad avanzada y estrategias de conversión para tu negocio.">
+  <meta name="keywords" content="desarrollo web, páginas web profesionales, diseño web, e-commerce, landing pages, SEO">
+  <link rel="canonical" href="https://valleycode.com">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="icon" href="/public/img/logo.webp" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <img src="public/img/logo.webp" alt="logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proyectos">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+        </ul>
+
+        <div class="menu-toggle" onclick="toggleMenu()">MENU</div>
+    </nav>
+</header>
+
+<!-- Side Menu -->
+<div class="side-menu" id="sideMenu">
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proyectos">Trabajos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+    </ul>
+</div>
+
+  <!-- OVERLAY -->
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-background">
+      <img src="/public/img/hero-image.webp" alt="Desarrollo web profesional" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-grid">
+        <div class="hero-badge">
+          <div class="status-dot"></div>
+          <span data-es="Argentina" data-en="Argentina">Argentina</span>
+        </div>
+        
+        <div class="hero-main">
+          <h1 class="hero-title">
+            <span data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</span> <span class="title-accent" data-es="Profesional" data-en="Professional">Profesional</span>
+            <br><span data-es="que" data-en="that">que</span> <span class="title-accent" data-es="Convierte" data-en="Converts">Convierte</span>
+          </h1>
+          <p class="hero-subtitle" data-es="Transformamos tu visión en resultados digitales medibles con diseño estratégico y tecnología avanzada" data-en="We transform your vision into measurable digital results with strategic design and advanced technology">Transformamos tu visión en resultados digitales medibles con diseño estratégico y tecnología avanzada</p>
+          <button class="primary-button" onclick="scrollToContact()" data-es="Iniciar Proyecto" data-en="Start Project">Iniciar Proyecto</button>
+        </div>
+
+        <div class="hero-badge">
+          <div class="status-dot"></div>
+          <span data-es="Profesional" data-en="Professional">Profesional</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+      <!-- testimonios SECTION -->
+    <section id="testimonios" class="testimonios-section">
+        <div class="section-container">
+            <header class="section-header">
+                <h2 class="section-title">Casos de <span class="text-accent">Éxito</span></h2>
+                <p class="section-description">Más de 200+ empresas han transformado su presencia digital con resultados medibles</p>
+            </header>
+            
+            <div class="testimonios-wrapper">
+                <div class="testimonios-grid" id="testimonialsGrid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="quote-mark">❝</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <p class="testimonial-text">"Incrementamos las reservas un 300% desde el lanzamiento. El equipo entendió perfectamente nuestras necesidades comerciales."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="María González" />
+                            <div class="author-info">
+                                <h4>María González</h4>
+                                <p>Restaurante La Tradición</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card featured-testimonial">
+                        <div class="testimonial-header">
+                            <span class="quote-mark">❝</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <p class="testimonial-text">"Necesitaba una presencia digital profesional para mi despacho. El resultado superó expectativas y ahora recibo clientes de toda España."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=2" alt="Carlos Mendez" />
+                            <div class="author-info">
+                                <h4>Carlos Mendez</h4>
+                                <p>Asesoría Jurídica CM</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="quote-mark">❝</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <p class="testimonial-text">"Mi tienda online funciona perfectamente. Las ventas se triplicaron y el diseño refleja exactamente la imagen que buscaba."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=3" alt="Ana Ruiz" />
+                            <div class="author-info">
+                                <h4>Ana Ruiz</h4>
+                                <p>Boutique Estilo</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="quote-mark">❝</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <p class="testimonial-text">"El equipo entendió perfectamente nuestras necesidades. La web no solo es atractiva, sino que también ha mejorado significativamente la conversión de clientes."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=7" alt="Carlos Méndez" />
+                            <div class="author-info">
+                                <h4>Carlos Méndez</h4>
+                                <p>Startup Fintech</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="quote-mark">❝</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <p class="testimonial-text">"Soporte rápido y diseño que vende."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=4" alt="Lucía P." />
+                            <div class="author-info">
+                                <h4>Lucía P.</h4>
+                                <p>Consultora</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="quote-mark">❝</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <p class="testimonial-text">"Trabajo impecable, entregaron todo a tiempo."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Pablo R." />
+                            <div class="author-info">
+                                <h4>Pablo R.</h4>
+                                <p>eCommerce</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>    
+<div class="trust-indicators">
+  <p class="trust-text">Empresas que confían en nosotros</p>
+  <div class="trust-logos-wrapper">
+    <div class="trust-logos">
+      <div class="trust-logo">InnovateHub</div>
+      <div class="trust-logo active">DigitalFlow</div>
+      <div class="trust-logo">CreativeStudio</div>
+      <div class="trust-logo active">WebSolutions</div>
+      <div class="trust-logo">TechCorp</div>
+
+      <div class="trust-logo">InnovateHub</div>
+      <div class="trust-logo active">DigitalFlow</div>
+      <div class="trust-logo">CreativeStudio</div>
+      <div class="trust-logo active">WebSolutions</div>
+      <div class="trust-logo">TechCorp</div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+  
+  <!-- PROBLEMS SECTION -->
+  <section id="problemas" class="problems-section">
+    <div class="section-container">
+      <header class="section-header">
+        <h2 class="section-title">¿Reconoces estos <span class="text-accent">Desafíos</span>?</h2>
+        <p class="section-description">Identificamos los obstáculos más comunes que enfrentan los emprendedores al buscar soluciones digitales efectivas.</p>
+      </header>
+      
+      <div class="problems-grid">
+        <article class="problem-card">
+          <div class="problem-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Presupuestos desproporcionados</h3>
+          <p>Cotizaciones fuera de alcance o servicios económicos que comprometen la calidad y profesionalismo de tu marca.</p>
+          <div class="case-study">
+            <p class="case-label">Caso real:</p>
+            <p>Miguel invirtió €5,000 en una web que no generó ni una conversión.</p>
+          </div>
+        </article>
+
+        <article class="problem-card">
+          <div class="problem-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Riesgo de resultados deficientes</h3>
+          <p>Experiencias negativas con proveedores que no cumplen expectativas, entregan proyectos incompletos o desaparecen.</p>
+          <div class="case-study">
+            <p class="case-label">Caso real:</p>
+            <p>A Sofía le entregaron una web que no funcionaba correctamente en dispositivos móviles.</p>
+          </div>
+        </article>
+
+        <article class="problem-card">
+          <div class="problem-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Ventaja competitiva perdida</h3>
+          <p>Mientras evalúas opciones, tu competencia captura clientes potenciales con presencia digital establecida y estratégica.</p>
+          <div class="case-study">
+            <p class="case-label">Caso real:</p>
+            <p>David perdió 40% de clientes potenciales por carecer de presencia online.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="insight-box">
+        <h3>Perspectiva del mercado</h3>
+        <p>Más del <span class="text-accent">78% de pequeños negocios</span> enfrentan estos desafíos. La solución está en elegir el socio tecnológico correcto.</p>
+        <div class="insight-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS SECTION -->
+  <section id="nosotros" class="solutions-section">
+    <div class="section-container">
+      <header class="section-header">
+        <h2 class="section-title">Nuestra <span class="text-accent">Metodología</span></h2>
+        <p class="section-description">Transformamos desafíos digitales en oportunidades de crecimiento mediante procesos probados</p>
+      </header>
+      
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <div class="solution-background"></div>
+          <div class="solution-content">
+            <div class="solution-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 3l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L13 3z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Implementación Ágil</h3>
+            <p>Desarrollo iterativo con entregas parciales para validar progreso y ajustar según feedback en tiempo real.</p>
+          </div>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-background"></div>
+          <div class="solution-content">
+            <div class="solution-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16,13C15.71,13 15.38,13 15.03,13.05C16.19,13.89 17,15 17,16.5V19H23V16.5C23,14.17 18.33,13 16,13M8,13C5.67,13 1,14.17 1,16.5V19H15V16.5C15,14.17 10.33,13 8,13M8,11A3,3 0 0,0 11,8A3,3 0 0,0 8,5A3,3 0 0,0 5,8A3,3 0 0,0 8,11M16,11A3,3 0 0,0 19,8A3,3 0 0,0 16,5A3,3 0 0,0 13,8A3,3 0 0,0 16,11Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Colaboración Estratégica</h3>
+            <p>Trabajo conjunto para comprender objetivos comerciales y traducirlos en soluciones digitales efectivas.</p>
+          </div>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-background"></div>
+          <div class="solution-content">
+            <div class="solution-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Resultados Medibles</h3>
+            <p>Analytics avanzados, métricas de conversión y optimización continua basada en datos reales de rendimiento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="proyectos" class="projects-section">
+    <div class="section-container">
+      <header class="section-header">
+        <h2 class="section-title">Nuestros <span class="text-accent">Proyectos</span></h2>
+        <p class="section-description">Soluciones digitales diseñadas estratégicamente para diferentes industrias y objetivos comerciales</p>
+      </header>
+      
+      <div class="projects-showcase">
+        <div class="project-card">
+          <div class="project-mockup">
+            <div class="laptop-frame">
+              <div class="laptop-screen">
+                <img src="/public/img/moda.webp" alt="E-commerce de Moda" />
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-content">
+                <h3>E-commerce de Moda</h3>
+                <p>Plataforma de ventas online con carrito de compras, pagos integrados y panel de administración completo.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Sitio web</span>
+                  <span class="project-tag">E-commerce</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-mockup">
+            <div class="laptop-frame">
+              <div class="laptop-screen">
+                <img src="/public/img/clinica.webp" alt="Clínica Dental" />
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-content">
+                <h3>Clínica Dental</h3>
+                <p>Website profesional con sistema de citas online, galería de tratamientos y blog informativo.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Sitio web</span>
+                  <span class="project-tag">Estrategia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-mockup">
+            <div class="laptop-frame">
+              <div class="laptop-screen">
+                <img src="/public/img/landing.webp" alt="Startup Fintech" />
+              </div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-content">
+                <h3>Startup Fintech</h3>
+                <p>Landing page de alta conversión para captar inversores y usuarios beta de aplicación financiera.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Landing Page</span>
+                  <span class="project-tag">Estrategia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="project-card">
+        <div class="project-mockup">
+          <div class="laptop-frame">
+            <div class="laptop-screen">
+              <img src="/public/img/electronico.webp" alt="E-commerce de Tecnologico" />
+            </div>
+          </div>
+          <div class="project-overlay">
+            <div class="project-content">
+              <h3>E-commerce tecnologico</h3>
+              <p>Plataforma de ventas online con carrito de compras, pagos integrados y panel de administración completo.</p>
+              <div class="project-tags">
+                <span class="project-tag">E-commerce</span>
+                <span class="project-tag">Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+  <div class="section-container">
+    <header class="section-header">
+      <h2 class="section-title">Preguntas <span class="text-accent">Frecuentes</span></h2>
+      <p class="section-description">Resolvemos las dudas más comunes sobre nuestros servicios y proceso de trabajo</p>
+    </header>
+    
+    <div class="faq-grid">
+      <div class="faq-column">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto tiempo tarda en estar lista mi página web?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El tiempo de entrega depende del plan elegido: Plan Básico (5-7 días), Plan Profesional (7-10 días), Plan Premium (10-14 días). Estos tiempos incluyen desde la conversación inicial hasta el lanzamiento completo.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué pasa si no me gusta el diseño?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ofrecemos revisiones incluidas en cada plan y una garantía de satisfacción del 100%. Si no estás completamente satisfecho, trabajaremos hasta conseguir el resultado que buscas o te devolvemos el dinero.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿La página web se verá bien en móviles?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutamente sí. Todas nuestras páginas web están diseñadas con tecnología responsive, lo que significa que se adaptan perfectamente a cualquier dispositivo: móviles, tablets, laptops y pantallas de escritorio.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-column">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Incluyen posicionamiento en Google (SEO)?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, todos nuestros planes incluyen optimización SEO básica: configuración de meta tags, estructura optimizada, velocidad de carga rápida y certificado SSL. El plan Premium incluye SEO avanzado con análisis de palabras clave.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo actualizar el contenido yo mismo después?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, te entregamos un panel de administración fácil de usar donde puedes actualizar textos, imágenes y contenido básico. También incluimos un tutorial personalizado y soporte técnico.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué incluye el soporte técnico?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El soporte incluye: resolución de problemas técnicos, actualizaciones de seguridad, copias de seguridad automáticas, y asistencia para cambios menores. La duración varía según el plan elegido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="faq-cta">
+      <p>¿Tienes alguna otra pregunta? Estamos aquí para ayudarte</p>
+      <button onclick="scrollToContact()">Preguntar Ahora</button>
+    </div>
+  </div>
+</section>
+
+  <!-- CONSEQUENCES SECTION -->
+  <section class="consequences-section">
+    <div class="section-container">
+      <header class="section-header">
+        <h2 class="section-title">¿Qué pasa si <span class="text-accent">no actúo</span>?</h2>
+        <p class="section-description">La inacción tiene un precio. Cada día sin presencia digital optimizada representa oportunidades comerciales perdidas.</p>
+      </header>
+      
+      <div class="warning-alert">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-content">
+          <h3>Realidad del mercado digital</h3>
+          <p>Estudios recientes demuestran que empresas sin presencia digital pierden en promedio <span class="text-accent font-weight-bold">40% de clientes potenciales</span> comparado con competidores digitalizados.</p>
+          <p class="alert-source">*Fuente: Estudio de comportamiento del consumidor digital 2024</p>
+        </div>
+      </div>
+
+      <div class="consequences-grid">
+        <div class="consequence-item">
+          <div class="consequence-header">
+            <div class="consequence-icon">📉</div>
+            <div class="consequence-stat">
+              <span>81%</span>
+              <div class="stat-label">de búsquedas online</div>
+            </div>
+          </div>
+          <h3>Pérdida de clientes diaria</h3>
+          <p>El 81% de consumidores investiga online antes de comprar. Sin presencia web, tu negocio es invisible para la mayoría del mercado.</p>
+        </div>
+
+        <div class="consequence-item">
+          <div class="consequence-header">
+            <div class="consequence-icon">⏰</div>
+            <div class="consequence-stat">
+              <span>30%</span>
+              <div class="stat-label">crecimiento digital anual</div>
+            </div>
+          </div>
+          <h3>Oportunidades irrecuperables</h3>
+          <p>Cada mes sin presencia digital son oportunidades comerciales perdidas permanentemente. Las tendencias digitales avanzan exponencialmente.</p>
+        </div>
+
+        <div class="consequence-item">
+          <div class="consequence-header">
+            <div class="consequence-icon">⚠️</div>
+            <div class="consequence-stat">
+              <span>84%</span>
+              <div class="stat-label">desconfía sin web</div>
+            </div>
+          </div>
+          <h3>Credibilidad comprometida</h3>
+          <p>Negocios sin presencia web parecen obsoletos o poco confiables. Tu reputación profesional se ve afectada ante clientes potenciales.</p>
+        </div>
+      </div>
+
+      <div class="action-prompt">
+        <button onclick="scrollToContact()" class="urgent-cta">Asegurar Mi Proyecto Ahora</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto-section">
+    <div class="section-container">
+      <header class="section-header">
+        <h2 class="section-title">¿Listo para <span class="text-accent">Empezar</span>?</h2>
+        <p class="section-description">Cuéntanos sobre tu proyecto y te enviaremos una propuesta personalizada en menos de 24 horas.</p>
+      </header>
+      
+      <div class="contacto-content">
+        <form id="contactForm" class="contacto-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre completo <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Juan Pérez" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="juan.perez@gmail.com" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="project">Tipo de proyecto <span class="required">*</span></label>
+            <select id="project" name="project" required>
+              <option value="">Seleccionar...</option>
+              <option value="landing">Landing Page</option>
+              <option value="profesional">Web Profesional</option>
+              <option value="ecommerce">E-commerce</option>
+              <option value="personalizado">Proyecto personalizado</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Cuéntanos sobre tu proyecto <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe tu negocio, objetivos y funcionalidades que necesitas..." required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-button">Enviar Proyecto</button>
+          <p class="form-disclaimer">Al enviar este formulario, aceptas que te contactemos para discutir tu proyecto.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img class="logo" src="/public/img/logo.webp" alt="Valley Code">
+          </div>
+        </div>
+        <div class="footer-brand">
+          <p class="footer-description">Creamos páginas web únicas que impulsan tu negocio. Diseño profesional, funcionalidad moderna.</p>
+        </div>
+        
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.254-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.584.07-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.35 0-6.195 1.843-6.195 6.192 0 1.28.014 1.688.072 4.947 0 3.259-.014 3.667-.072 4.947-.134 4.298 1.802 6.195 6.192 6.195 1.28 0 1.688.014 4.947.072 3.259 0 3.667-.014 4.947-.072 4.35-0 6.195-1.843 6.195-6.195 0-1.28-.014-1.688-.072-4.947-0-3.259.014-3.667.072-4.947.134-4.298-1.802-6.195-6.192-6.195z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Valley code. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
