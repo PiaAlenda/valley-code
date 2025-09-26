@@ -1,6 +1,6 @@
 :root {
   --color-primary: #f97316;
-  --color-primary-dark: #ea580c;
+  --color-primary-dark: #ea580c; 
   --color-primary-light: #fed7aa;
   --color-background: #0f0f0f;
   --color-surface: #1a1a1a;
@@ -1207,7 +1207,7 @@ a {
 }
 
 .alert-icon {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xs);
   flex-shrink: 0;
 }
 
